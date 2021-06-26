@@ -11,7 +11,7 @@ namespace DataAccess.Concrete.Entity_Framework
     public class CarRentalContext:DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=carrental;User Id=postgres;Password=altan123");
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=carrental;User Id=postgres;Password=*****");
         }
 
         public DbSet<Car> Cars { get; set; }
