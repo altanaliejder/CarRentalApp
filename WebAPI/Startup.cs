@@ -32,10 +32,10 @@ namespace WebAPI
         {
 
             services.AddControllers();
-            services.AddSingleton<ICarService, CarManager>();//IoC için yapýyoruz
-            services.AddSingleton<ICarDal, EfCarDal>();//IoC için yapýyoruz
-            services.AddSingleton<IBrandService, BrandManager>();
-            services.AddSingleton<IBrandDal, EfBrandDal>();
+            //services.AddSingleton<ICarService, CarManager>();//IoC için yapýyoruz
+            //services.AddSingleton<ICarDal, EfCarDal>();//IoC için yapýyoruz
+            //services.AddSingleton<IBrandService, BrandManager>();
+            //services.AddSingleton<IBrandDal, EfBrandDal>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPI", Version = "v1" });
